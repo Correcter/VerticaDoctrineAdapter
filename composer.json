@@ -1,0 +1,21 @@
+{
+    "name": "Correcter/VerticaDoctrineAdapter",
+    "description": "Unofficial version of Vertica-Doctrine bundle.",
+    "license": "Public Domain",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "": "/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^2.6",
+        "doctrine/doctrine-bundle": "^1.9",
+        "doctrine/doctrine-cache-bundle": "^1.2"
+    }
+}
