@@ -1,20 +1,20 @@
-#### Библиотека для взаимодействия с СУБД [Vertica](https://www.vertica.com/) через [Doctrine](http://doctrine-project.org/)
+#### Library for interaction with DBMS [Vertica](https://www.vertica.com /) via [Doctrine](http://doctrine-project.org /)
 
 ##### VerticaDoctrineAdapter
 
-*Установка и развертывание*
+*Installation and deployment*
 
 ``` composer install ```
 
-- Установщик должен подтянуть все необходимые ``vendor`` - пакеты.
+- The installer must pull up all the necessary `vendor` packages.
 
-#### Примеры использования
+#### Usage examples
 
-- Создадим менеджер шардов
+- Create a shard manager
 
 `$shardManager = new PoolingShardManager($em->getConnection());`
 
-- Зададим параметры сущности **Client**
+- Set the parameters of the **Client entity**
 
 ```
    $client = new \Entity\Client();
@@ -37,11 +37,11 @@
     ....
 ```
 
-- Передадим сущность Doctrine в ShardManager
+- Passing the Doctrine entity to ShardManager
 
 `$shardManager->selectShardByEntity($client);`
 
-- Получаем инициализированную сущность с данными:
+- Getting an initialized entity with data:
 
 ```
 print_r($client->getCampaigns())
